@@ -3,9 +3,6 @@ const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
 const { get, set } = require('./src/db/redis')
 
-// // session数据
-// const SESSION_DATA = {}
-
 // 处理postdata
 const getPostData = (req) => {
     const promise = new Promise((resolve, reject) => {
@@ -65,20 +62,6 @@ const serverHandle = (req, res) => {
         req.cookie[key] = val
     })
 
-    // // 处理session(原生定义)
-    // let needSetCookie = false
-    // let userId = req.cookie.userid
-    // if (userId) {
-    //     if (!SESSION_DATA[userId]) {
-    //         SESSION_DATA[userId] = {}
-    //     }
-    // } else {
-    //     needSetCookie = true
-    //     userId = `${Date.now()}_${Math.random()}`
-    //     SESSION_DATA[userId] = {}
-    // }
-    // req.session = SESSION_DATA[userId]
-
     // redis解析session
     let needSetCookie = false
     let userId = req.cookie.userid
@@ -88,6 +71,7 @@ const serverHandle = (req, res) => {
         // 初始化redis中的session值
         set(userId, {})
     }
+    
     // 获取session
     req.sessionId = userId
     get(req.sessionId).then(sessionData => {
