@@ -2,8 +2,9 @@ const querystring = require('querystring')
 const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
 const { get, set } = require('./src/db/redis')
+const { access } = require('./src/utils/log')
 
-// 处理postdata
+// 处理postdata 
 const getPostData = (req) => {
     const promise = new Promise((resolve, reject) => {
         if (req.method !== 'POST') {
@@ -32,6 +33,10 @@ const getPostData = (req) => {
 
 }
 const serverHandle = (req, res) => {
+
+    // 记录日志
+    access(`${req.method} -- ${req.url} -- ${req.headers['user-agent']} -- ${Date.now()}`)
+
     // 设置返回格式
     res.setHeader('Content-type', 'application/json')
 
@@ -71,7 +76,7 @@ const serverHandle = (req, res) => {
         // 初始化redis中的session值
         set(userId, {})
     }
-    
+
     // 获取session
     req.sessionId = userId
     get(req.sessionId).then(sessionData => {
@@ -102,7 +107,7 @@ const serverHandle = (req, res) => {
         }
 
         const userResult = handleUserRouter(req, res)
-        if (userResult) {
+        if (userResult) { 
             userResult.then(userData => {
                 if (needSetCookie) {
                     res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)

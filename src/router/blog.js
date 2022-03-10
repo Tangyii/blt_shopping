@@ -24,7 +24,8 @@ const handleBlogRouter = (req, res) => {
         let author = req.query.author || ''
         const keyword = req.query.keyword || ''
         // 登录验证
-        if (req.query.isadmin) {
+        // if (req.query.isadmin) {
+        if ('a' == 'a') {
             const loginCheckResult = loginCheck(req)
             if (loginCheckResult) {
                 return loginCheckResult
