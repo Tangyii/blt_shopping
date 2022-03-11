@@ -1,6 +1,7 @@
 const querystring = require('querystring')
 const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
+const handleShopsRouter = require('./src/router/shops/shop-list')
 const { get, set } = require('./src/db/redis')
 const { access } = require('./src/utils/log')
 
@@ -92,6 +93,7 @@ const serverHandle = (req, res) => {
         return getPostData(req)
     }).then(postData => {
         req.body = postData
+
         // BLOG路由chuli
         const blogResult = handleBlogRouter(req, res)
         if (blogResult) {
@@ -107,7 +109,7 @@ const serverHandle = (req, res) => {
         }
 
         const userResult = handleUserRouter(req, res)
-        if (userResult) { 
+        if (userResult) {
             userResult.then(userData => {
                 if (needSetCookie) {
                     res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
@@ -115,6 +117,19 @@ const serverHandle = (req, res) => {
                 res.end(
                     JSON.stringify(userData)
                 )
+            })
+            return
+        }
+
+        const shopsResult = handleShopsRouter(req, res)
+        if (shopsResult) {
+            shopsResult.then(shopsData => {
+                if (needSetCookie) {
+                    res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
+                }
+                res.end(
+                    JSON.stringify(shopsData)
+                    )
             })
             return
         }

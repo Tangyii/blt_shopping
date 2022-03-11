@@ -6,11 +6,11 @@ let REDIS_CONF
 // if (env === "dev") {
     // mysql
     MYSQL_CONF = {
-        host: 'localhost',
+        host: '127.0.0.2',
         user: "root",
-        password: 'tangyi123',
-        port:'3306',
-        database: "ym_blog"    //数据库名称
+        password: '123456',
+        port:'3307',
+        database: "cloudShopping"    //数据库名称
     }
 
     // REDIS
