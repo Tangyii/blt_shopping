@@ -19,7 +19,7 @@ const loginCheck = (req) => {
 const handleShopsRouter = (req, res) => {
     const method = req.method
     const id = req.query.id
-
+    
     // 分页获取商品列表
     if (method === 'GET' && req.path === '/api/shops/getShopsForPage') {
 

@@ -65,3 +65,82 @@ POST -- /api/shops/update -- PostmanRuntime/7.29.0 -- 1646968634001
 POST -- /api/shops/update -- PostmanRuntime/7.29.0 -- 1646968760420
 POST -- /api/shops/update -- PostmanRuntime/7.29.0 -- 1646968814744
 POST -- /api/shops/update -- PostmanRuntime/7.29.0 -- 1646968838926
+GET -- /api/blog/list -- PostmanRuntime/7.29.0 -- 1646976309733
+GET -- /api/shops/list -- PostmanRuntime/7.29.0 -- 1646976316951
+GET -- /api/shops/getShopsForPage -- PostmanRuntime/7.29.0 -- 1646976350270
+GET -- /api/shops/getShopsForPage?pno=1&psize=10 -- PostmanRuntime/7.29.0 -- 1646976417810
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646981617684
+POST -- /api/user/login -- PostmanRuntime/7.29.0 -- 1646981763178
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646981775150
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646981931130
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646981942250
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646982061660
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646982113725
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646982135525
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646982136079
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1646982164643
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647077499535
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647077501054
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647077698757
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647077914612
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647077946956
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647078127337
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647078132617
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647078223352
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647078258089
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647078402341
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647078480431
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647078597969
+POST -- /api/user/login -- PostmanRuntime/7.29.0 -- 1647078654595
+POST -- /api/user/login -- PostmanRuntime/7.29.0 -- 1647078675873
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647079019416
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647081375281
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647081380484
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647081651468
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647081728572
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647081788699
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647081841778
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647081937991
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098010074
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098084162
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098278772
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098291245
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098296844
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098323158
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098325784
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098341456
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098356509
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098572005
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098651001
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098897569
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647098900012
+GET -- /api/shops/getShopsForPage?pno=1&psize=10 -- PostmanRuntime/7.29.0 -- 1647098998111
+POST -- /api/user/login -- PostmanRuntime/7.29.0 -- 1647099032978
+GET -- /api/shops/getShopsForPage?pno=1&psize=10 -- PostmanRuntime/7.29.0 -- 1647099037701
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099126709
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099194525
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099215563
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099259835
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099332597
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099368727
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099429525
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647099495349
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647100490903
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647147762259
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647147941708
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647183193087
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647183251950
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647269474009
+POST -- /api/user/login -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647269628519
+GET -- /api/user/list/page?pno=1&psize=10&username= -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647271149915
+GET -- /api/user/list/page?pno=1&psize=10&username= -- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 -- 1647271149923
+GET -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351054991
+GET -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351093915
+POST -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351117684
+POST -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351254911
+POST -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351380614
+POST -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351405475
+POST -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351408251
+GET -- /api/shops/getShopsForPage?pno=1&psize=10 -- PostmanRuntime/7.29.0 -- 1647351437118
+POST -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351711168
+POST -- /api/user/menu -- PostmanRuntime/7.29.0 -- 1647351946697

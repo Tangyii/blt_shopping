@@ -1,6 +1,7 @@
 const querystring = require('querystring')
 const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
+const handleMenuRouter = require('./src/router/menu')
 const handleShopsRouter = require('./src/router/shops/shop-list')
 const { get, set } = require('./src/db/redis')
 const { access } = require('./src/utils/log')
@@ -129,6 +130,19 @@ const serverHandle = (req, res) => {
                 }
                 res.end(
                     JSON.stringify(shopsData)
+                    )
+            })
+            return
+        }
+        
+        const menuResult = handleMenuRouter(req, res)
+        if (menuResult) {
+            menuResult.then(menuData => {
+                if (needSetCookie) {
+                    res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
+                }
+                res.end(
+                    JSON.stringify(menuData)
                     )
             })
             return

@@ -4,7 +4,6 @@ const { set } = require('../db/redis')
 
 const handleUserRouter = (req, res) => {
     const method = req.method
-
     // 登录
     if (method === 'POST' && req.path === '/api/user/login') {
         const { username, password } = req.body
@@ -15,7 +14,7 @@ const handleUserRouter = (req, res) => {
                 req.session.username = data.username
                 req.session.realname = data.realname
                 set(req.sessionId, req.session)
-                return new SuccessModel()
+                return new SuccessModel('登录成功',req.sessionId,req.session.username)
             }
             return new ErrorModel('登陆失败')
         })
