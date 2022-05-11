@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2970564 */
+  src: url('iconfont.woff2?t=1651157284511') format('woff2'),
+       url('iconfont.woff?t=1651157284511') format('woff'),
+       url('iconfont.ttf?t=1651157284511') format('truetype');
+}
+
+[class^="el-icon-ump"], [class*=" el-icon-ump"] {
+  font-family:"fontFamily" !important;
+  /* 以下内容参照第三方图标库本身的规则 */
+  font-size: 18px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
+  
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-ump-huanyingye:before {
+  content: "\e728";
+}
+
+.el-icon-ump-quanbudingdan:before {
+  content: "\e600";
+}
+
+.el-icon-ump-dingdan:before {
+  content: "\e737";
+}
+
+.el-icon-ump-gouwuchetianjia:before {
+  content: "\e640";
+}
+
+.el-icon-ump-guanyuwomen:before {
+  content: "\e655";
+}
+
+.el-icon-ump-shangpinguanli:before {
+  content: "\e66e";
+}
+
+.el-icon-ump-shuju:before {
+  content: "\e664";
+}
+
+.el-icon-ump-shouye:before {
+  content: "\e639";
+}
+
+.el-icon-ump-yly_dingdan:before {
+  content: "\e611";
+}
+
+.el-icon-ump-shezhi-xianxing:before {
+  content: "\e8b7";
+}
+
+.el-icon-ump-yonghu-xianxing:before {
+  content: "\e8c8";
+}
+
+.el-icon-ump-dingdandaifukuan:before {
+  content: "\e896";
+}
+
+.el-icon-ump-dingdandingdanchaxun:before {
+  content: "\e78a";
+}
+
+.el-icon-ump-dingdan1:before {
+  content: "\e603";
+}
+
+.el-icon-ump-jurassic_add-user:before {
+  content: "\e6ed";
+}
+
+.el-icon-ump-jurassic_add-users:before {
+  content: "\e6f4";
+}
+
+.el-icon-ump-tianjia:before {
+  content: "\e612";
+}
+
+.el-icon-ump-shangpinguanli1:before {
+  content: "\e67d";
+}
+
+.el-icon-ump-shangpinguanli2:before {
+  content: "\e629";
+}
+
+.el-icon-ump-tianjiadingdan1:before {
+  content: "\e605";
+}
+
+.el-icon-ump-shangpinguanli3:before {
+  content: "\e809";
+}
+
