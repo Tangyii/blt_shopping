@@ -194,6 +194,66 @@ const store = new Vuex.Store({
 						]
 					}
 				]
+			}else {
+				menuList = [
+					{
+						"id": "13242090",
+						"name": "首页",
+						"icon": "el-icon-ump-shouye",
+						"children": [
+							{
+								"id": 143342186416,
+								"name": "可视化数据",
+								"icon": "el-icon-ump-shuju",
+								"url": "/echars"
+							}
+						]
+					},
+					{
+						"id": "2",
+						"name": "商品设置",
+						"icon": "el-icon-ump-shangpinguanli2",
+						"children": [
+							{
+								"id": 2601872226416,
+								"name": "商品状态管理",
+								"icon": "el-icon-ump-shangpinguanli3",
+								"url": "/goods-status"
+							},
+							{
+								"id": 2601878186416,
+								"name": "商品信息管理",
+								"icon": "el-icon-ump-shangpinguanli3",
+								"url": "/goods"
+							},
+						]
+					},
+					{
+						"id": "3",
+						"name": "订单管理",
+						"icon": "el-icon-ump-dingdan1",
+						"children": [
+							{
+								"id": 31,
+								"name": "已支付订单",
+								"icon": "el-icon-ump-yly_dingdan",
+								"url": "/order-paid"
+							},
+							{
+								"id": 32,
+								"name": "已发货订单",
+								"icon": "el-icon-ump-yly_dingdan",
+								"url": "/order-shipped"
+							},
+							{
+								"id": 33,
+								"name": "已完成订单",
+								"icon": "el-icon-ump-yly_dingdan",
+								"url": "/order-completed"
+							},
+						]
+					}
+				]
 			}
 			// commit相当于调用了mutations中对应的方法
 			commit('setActiveMenuId', menuList[0].children[0].id)
@@ -208,7 +268,7 @@ const store = new Vuex.Store({
 		// menuModel: MenuModel,
 		goodsModel: GoodsModel,
 		// cardModel: CardModel,
-		echarsModel:EcharsModel,
+		echarsModel: EcharsModel,
 		// couponModel: CouponModel,
 		orderModel: OrderModel,
 		// cardTypeModel: CardTypeModel,

@@ -9,7 +9,7 @@
 					ref="addForm" 
 					:rules="rules">
 					<el-form-item size="mini" prop="name" label="订单编号">
-						{{addForm.orderNo}}
+						{{addForm.id}}
 					</el-form-item>
 					<el-form-item size="mini" prop="price" label="商品原价">
 						{{addForm.singlePriceOld}}
@@ -24,10 +24,13 @@
 						{{addForm.totalPrice}}
 					</el-form-item>
 					<el-form-item size="mini" prop="price" label="购买人">
-						{{addForm.nickname}}
+						{{addForm.userId}}
 					</el-form-item>
 					<el-form-item size="mini" prop="price" label="购买人电话">
 						{{addForm.phone}}
+					</el-form-item>
+					<el-form-item size="mini" prop="address" label="购买人地址">
+						{{addForm.address}}
 					</el-form-item>
 					<el-form-item size="mini" prop="price" label="订单状态">
 						<el-tag v-if="addForm.status==1">已支付</el-tag>

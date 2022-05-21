@@ -37,11 +37,11 @@
               v-model.number="addForm.count"
             ></el-input>
           </el-form-item>
-          <el-form-item size="mini" prop="goodsTypeId" label="商品类型">
+          <el-form-item size="mini" prop="shopsTypeId" label="商品类型">
             <el-select
               placeholder="请选择"
               clearable
-              v-model.trim="addForm.goodsTypeId"
+              v-model.trim="addForm.shopsTypeId"
             >
               <el-option
                 v-for="item in goodsTypeList"
@@ -70,13 +70,12 @@
               </div>
             </el-upload>
           </el-form-item>
-          <el-form-item size="mini" label="商品图片" prop="pics">
+          <!-- <el-form-item size="mini" label="商品图片" prop="pics">
             <el-upload
               action="/api/file/upload"
               :limit="3"
               ref="upload1"
               :multiple="false"
-			  :on-remove="removepic"
               :auto-upload="true"
               :file-list="fileList1"
               list-type="picture-card"
@@ -89,7 +88,7 @@
                 上传图片大小不超过500kb
               </div>
             </el-upload>
-          </el-form-item>
+          </el-form-item> -->
           <el-form-item size="mini" prop="description" label="商品描述">
             <el-input
               show-word-limit
@@ -171,7 +170,7 @@ export default {
             },
           },
         ],
-        goodsTypeId: [
+        shopsTypeId: [
           {
             required: true,
             message: "请选择商品类型",
@@ -189,18 +188,6 @@ export default {
             },
           },
         ],
-        pics: [
-          {
-            required: true,
-            validator(rules, value, callback) {
-              if (_this.fileList1.length > 0) {
-                callback();
-              } else {
-                callback(new Error("请上至少上传一个商品图片"));
-              }
-            },
-          },
-        ],
         description: [
           {
             required: true,
@@ -214,7 +201,7 @@ export default {
         name: "",
         price: 0,
         zheKou: 10,
-        goodsTypeId: "",
+        shopsTypeId: "",
         description: "",
         logo: "",
         pics: [],
@@ -228,16 +215,26 @@ export default {
     let id = this.$route.query.id;
     await this.getGoodsTypeListAll();
     this.addForm = await this.findById(id);
-    this.fileList = [
-      {
-        url: require("@/assets/pic/" + this.addForm.logo),
-      },
-    ];
-    let arr = this.addForm.pics.split(',')
-	arr.forEach((item) => {
-		this.fileList1.push({url:require("@/assets/pic/" +item)})
-	})
-},
+    if (this.addForm.logo.indexOf("http") == -1) {
+      this.fileList = [
+        {
+          url: require("@/assets/pic/" + this.addForm.logo),
+        },
+      ];
+    } else {
+      this.fileList = [
+        {
+          url: this.addForm.logo,
+        },
+      ];
+    }
+    if (this.addForm.pics) {
+      let arr = this.addForm.pics.split(",");
+      arr.forEach((item) => {
+        this.fileList1.push({ url: require("@/assets/pic/" + item) });
+      });
+    }
+  },
   computed: {
     ...mapState("goodsModel", ["goodsTypeList"]),
   },

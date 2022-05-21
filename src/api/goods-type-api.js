@@ -42,7 +42,7 @@ export const updateGoodsType = (addForm) => {
 
 export const deleteGoodsTypeById = (id) => {
 	return api.http({
-		url:`/shops/delete/id/${id}`,
+		url:`/shops/delete/type?id=${id}`,
 		method:'delete',
 	})
 }

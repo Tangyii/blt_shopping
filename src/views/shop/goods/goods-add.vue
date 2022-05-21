@@ -18,6 +18,7 @@
           </el-form-item>
           <el-form-item size="mini" prop="price" label="商品价格">
             <el-input
+              type="number"
               placeholder="请输入"
               clearable
               v-model.number="addForm.price"
@@ -70,7 +71,7 @@
               </div>
             </el-upload>
           </el-form-item>
-          <el-form-item size="mini" label="商品图片" prop="pics">
+          <!-- <el-form-item size="mini" label="商品图片" prop="pics">
             <el-upload
               action="/api/file/upload"
               :limit="3"
@@ -88,7 +89,7 @@
                 上传图片大小不超过500kb
               </div>
             </el-upload>
-          </el-form-item>
+          </el-form-item> -->
           <el-form-item size="mini" prop="description" label="商品描述">
             <el-input
               show-word-limit
@@ -190,18 +191,6 @@ export default {
             },
           },
         ],
-        // pics: [
-        //   {
-        //     required: true,
-        //     validator(rules, value, callback) {
-        //       if (_this.fileList1.length > 0) {
-        //         callback();
-        //       } else {
-        //         callback(new Error("请上至少上传一个商品图片"));
-        //       }
-        //     },
-        //   },
-        // ],
         description: [
           {
             required: true,
@@ -265,44 +254,12 @@ export default {
         this.handleBack();
       }
     },
-    handleBeforeUpload(file) {
-      // 判断当前的文件类型如果不是这些类型的文件就弹出错误提示并中断上传操作
-      if (
-        !(
-          file.name.indexOf("png") != -1 ||
-          file.name.indexOf("jpg") != -1 ||
-          file.name.indexOf("jpeg") != -1 ||
-          file.name.indexOf("gif") != -1
-        )
-      ) {
-        this.$notify({
-          title: "提示",
-          message: "只能上传图片格式的文件",
-          type: "error",
-        });
-        // 通过return Promise.reject()可以实现中断上传操作，不在触发上传的函数
-        // 但是这里要注意的是，组件内部会自动处理已经传入的fileList，在选择文件的时候就会对fileList增加一个
-        // 本地数据，当我们中断上传时，组件内部会自动自行删除fileList，这样就会触发下面的beforeRemove和remove
-        return Promise.reject();
-      }
-    },
-    handleError(err) {
-      this.$notify({
-        title: "提示",
-        message: "上传logo失败",
-        type: "error",
-      });
-    },
-    handleError1(err) {
-      this.$notify({
-        title: "提示",
-        message: "上传商品图片失败",
-        type: "error",
-      });
-    },
   },
 };
 </script>
 
 <style scoped="scoped" lang="scss">
+.el-form-item__content {
+  line-height: 0;
+}
 </style>

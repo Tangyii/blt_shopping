@@ -74,7 +74,7 @@
               >
                 <td>{{ ++index }}</td>
                 <td>{{ item.name }}</td>
-                <td>{{ item.value }}</td>
+                <td>{{ item.price }}</td>
               </tr>
             </table>
           </div>

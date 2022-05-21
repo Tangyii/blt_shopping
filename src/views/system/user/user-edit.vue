@@ -38,9 +38,9 @@
             >
               <el-option
                 v-for="item in roleList"
-                :key="item.id"
+                :key="item.roleId"
                 :label="item.roleName"
-                :value="item.id"
+                :value="item.roleId"
               ></el-option>
             </el-select>
           </el-form-item>

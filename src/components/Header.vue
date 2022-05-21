@@ -73,7 +73,7 @@
 		.p-user{
 			display: inline-block;
 			cursor: pointer;
-			// float: right;
+			float: right;
 		}
 	}
 </style>

@@ -13,7 +13,7 @@
 			border
 			size="mini"
 			:data="list">
-			<el-table-column label="订单编号" prop="orderNo"></el-table-column>
+			<el-table-column label="订单编号" prop="id"></el-table-column>
 			<el-table-column label="购买人手机" prop="phone"></el-table-column>
 			<el-table-column label="商品名称" prop="name"></el-table-column>
 			<el-table-column label="订单金额" prop="totalPrice"></el-table-column>

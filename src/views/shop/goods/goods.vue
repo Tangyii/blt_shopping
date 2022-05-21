@@ -75,7 +75,6 @@
           >
           <el-button
             size="mini"
-            v-if="row.isOnSale == 0"
             @click="handleRemove(row.id)"
             icon="el-icon-remove"
             type="danger"

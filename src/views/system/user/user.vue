@@ -31,19 +31,20 @@
     <el-table border size="mini" :data="list">
       <el-table-column label="账号" prop="username"></el-table-column>
       <el-table-column label="昵称" prop="nickname"></el-table-column>
+      <el-table-column label="联系方式" prop="phone"></el-table-column>
       <el-table-column label="头像">
         <template v-slot="{ row }">
           <img
             style="width: 100px; height: 100px; border-radius: 9px"
             fit="cover"
-            :src="row.face ? require('@/assets/pic/'+ row.face) : '/'"
-          >
+            :src="row.face ? require('@/assets/pic/' + row.face) : ''"
+          />
         </template>
       </el-table-column>
       <el-table-column label="角色" prop="roleName">
         <template v-slot="{ row }">
           <el-tag size="small">
-            {{ row.roleName }}
+            {{ getRoleName(row.roleId) }}
           </el-tag>
         </template>
       </el-table-column>
@@ -100,7 +101,7 @@ export default {
     };
   },
   computed: {
-    ...mapState("userModel", ["list", "page"]),
+    ...mapState("userModel", ["list", "page","roleList"]),
     formatTime() {
       return function (time) {
         let d = new Date(time);
@@ -111,13 +112,28 @@ export default {
     },
   },
   async created() {
+    await this.getRoleListAll();
     await this.getListForPage(this.queryForm);
   },
   async activated() {
+    await this.getRoleListAll();
     await this.getListForPage(this.queryForm);
   },
   methods: {
-    ...mapActions("userModel", ["getListForPage", "deleteById"]),
+    ...mapActions("userModel", [
+      "getRoleListAll",
+      "getListForPage",
+      "deleteById",
+    ]),
+    getRoleName(id) {
+      let res
+      this.roleList.forEach((item) => {
+        if(item.roleId === id) {
+          res = item.roleName
+        }
+      })
+      return res
+    },
     async handleClick() {
       this.queryLoading = true;
       this.queryForm.pno = 1;

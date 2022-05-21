@@ -62,11 +62,19 @@ export default {
       if (valid) {
         let res = await login(this.formData.username, this.formData.password);
         if (res.data.code === 200) {
-          sessionStorage.userInfo = JSON.stringify(res.data.userInfo);
-          sessionStorage.token = res.data.token;
-          sessionStorage.roleId = res.data.roleId;
-          await this.fetchMenuByRoleId(res.data.roleId);
-          this.$router.push('/echars');
+          if (res.data.roleId === 1 || res.data.roleId === 0) {
+            sessionStorage.userInfo = JSON.stringify(res.data.userInfo);
+            sessionStorage.token = res.data.token;
+            sessionStorage.roleId = res.data.roleId;
+            await this.fetchMenuByRoleId(res.data.roleId);
+            this.$router.push("/echars");
+          } else {
+            this.$notify({
+              type: "error",
+              title: "提示",
+              message: "登录失败",
+            });
+          }
         }
       }
     },
@@ -94,11 +102,11 @@ export default {
 
   .p-login-bar {
     position: absolute;
-    left: 420px;
+    left: 35%;
+    top: 48%;
     width: 300px;
     height: 400px;
-    margin: auto;
-    margin-top: 180px;
+    transform: translate(-50%, -50%);
     padding: 15px 30px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 9px;
@@ -133,11 +141,9 @@ export default {
   @keyframes fade-down {
     from {
       opacity: 0;
-      transform: translateY(-100px);
     }
     to {
       opacity: 1;
-      transform: translateY(0px);
     }
   }
 }
